@@ -8,7 +8,12 @@ const Banner = ({ userName }) => {
 
   return (
     <>
-      <Title heading={heading} para={para} userName={userName} />
+      <Title
+        heading={heading}
+        para={para}
+        userName={userName}
+        isLoggedIn={false}
+      />
     </>
   );
 };
