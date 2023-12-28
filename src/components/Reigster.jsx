@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Register = () => {
-  const [userData, userUserData] = useState({
+  const [userData, setUserData] = useState({
     username: "",
     email: "",
     password: "",
@@ -9,7 +9,7 @@ const Register = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    userUserData({
+    setUserData({
       ...userData,
       [name]: value,
     });
@@ -18,10 +18,16 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // calling api
-    alert(
-      `username: ${userData.username}, email: ${userData.email}, password: ${userData.password}`
+    console.log(
+      `User: ${userData.username}, ${userData.email}, ${userData.password}`
     );
+
+    // clear the form submission
+    setUserData({
+      username: "",
+      email: "",
+      password: "",
+    });
   };
 
   return (
@@ -33,6 +39,7 @@ const Register = () => {
           type="text"
           placeholder="enter your name"
           name="username"
+          value={userData.username}
           onChange={handleChange}
         />
         <br />
@@ -42,6 +49,7 @@ const Register = () => {
           type="email"
           placeholder="enter your email"
           name="email"
+          value={userData.email}
           onChange={handleChange}
         />
         <br />
@@ -51,10 +59,11 @@ const Register = () => {
           type="password"
           placeholder="enter your password"
           name="password"
+          value={userData.password}
           onChange={handleChange}
         />
 
-        <button type="submit">Registration</button>
+        <button type="submit">Register</button>
       </form>
     </>
   );
