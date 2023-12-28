@@ -8,6 +8,7 @@ import Topbar from "./components/Topbar/Topbar";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Post from "./pages/post";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/about" exact element={<About />} />
         <Route path="/contact" exact element={<Contact />} />
+        <Route path="/post" exact element={<Post />} />
         <Route path="*" exact element={<h3>Sorry, 404 not found</h3>} />
       </Routes>
     </>
