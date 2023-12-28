@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const [userData, setUserData] = useState({
@@ -18,9 +20,17 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(
-      `User: ${userData.username}, ${userData.email}, ${userData.password}`
-    );
+    // console.log(
+    //   `User: ${userData.username}, ${userData.email}, ${userData.password}`
+    // );
+
+    // simple form validation with toastify
+    if (!userData.username || !userData.email || !userData.password) {
+      toast.error("Please fill in all fields!");
+      return;
+    }
+
+    // form submission successful
 
     // clear the form submission
     setUserData({
@@ -28,6 +38,8 @@ const Register = () => {
       email: "",
       password: "",
     });
+
+    toast.success("Register successful");
   };
 
   return (
@@ -65,6 +77,8 @@ const Register = () => {
 
         <button type="submit">Register</button>
       </form>
+
+      <ToastContainer />
     </>
   );
 };
