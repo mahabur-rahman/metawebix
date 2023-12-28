@@ -3,27 +3,24 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../../images/google.jpeg";
 // style
 import "./topbar.css";
-// menu
-import menu from "../../data/data";
+import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
     <>
       <Navbar>
         <Container>
-          <Navbar.Brand href="#home">
+          <Link to="/">
             <img src={logo} alt="logo" className="logo" />
-          </Navbar.Brand>
+          </Link>
           <Navbar.Toggle />
 
           <Nav className="mr-auto text-white">
-            {menu.map((anything) => (
-              <div key={Math.random()}>
-                <a className="mx-3 text-black" href={anything.link}>
-                  {anything.title}
-                </a>
-              </div>
-            ))}
+            <Link to="/">Home</Link>
+            <Link to="/about" className="mx-3">
+              About
+            </Link>
+            <Link to="/contact">Contact</Link>
           </Nav>
         </Container>
       </Navbar>
