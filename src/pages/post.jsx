@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import PostContent from "../components/PostContent";
+import axios from "axios";
 
 const Post = () => {
   const [posts, setPosts] = useState([]);
@@ -8,12 +9,11 @@ const Post = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
+        const response = await axios.get(
           "https://jsonplaceholder.typicode.com/posts"
         );
 
-        const data = await response.json();
-        setPosts(data);
+        setPosts(response.data);
       } catch (err) {
         console.log(err.message);
       }
@@ -24,8 +24,10 @@ const Post = () => {
 
   return (
     <div>
-      <h1>Fetch data from API : {posts.length} </h1>
-      <Container fluid>
+      <h1 className="text-center my-5 text-danger">
+        Fetch data from API : {posts.length}
+      </h1>
+      <Container>
         <Row>
           {posts.slice(0, 10).map((post) => (
             <Col md={6} key={post.id}>

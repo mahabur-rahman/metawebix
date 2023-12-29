@@ -1,9 +1,24 @@
-// eslint-disable-next-line react/prop-types
+import { Button, Card } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
 const PostContent = ({ post }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/about");
+  };
+
   return (
     <>
-      <h2>Post of users : {post?.length}</h2>
-      <p>{post?.body}</p>
+      <Card>
+        <Card.Body>
+          <Card.Title>{post.title}</Card.Title>
+          <Card.Text>{post.body}</Card.Text>
+          <Button variant="warning" onClick={handleClick}>
+            Read More
+          </Button>
+        </Card.Body>
+      </Card>
     </>
   );
 };
