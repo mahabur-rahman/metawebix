@@ -1,17 +1,26 @@
+import { useContext } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 // logo
 import logo from "../../images/google.jpeg";
 // style
 import "./topbar.css";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../UserContext/UserContext";
 
 const Topbar = () => {
+  const { user } = useContext(UserContext);
+  const { role } = user;
+
   return (
     <>
       <Navbar>
         <Container>
           <Link to="/">
-            <img src={logo} alt="logo" className="logo" />
+            {role === "admin" ? (
+              "Mahabur"
+            ) : (
+              <img src={logo} alt="logo" className="logo" />
+            )}
           </Link>
           <Navbar.Toggle />
 

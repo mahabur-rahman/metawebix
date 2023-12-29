@@ -1,8 +1,12 @@
+import UserProfile from "../components/UserProfile";
+
 const Home = () => {
   return (
-    <>
-      <h1>Home page</h1>
-    </>
+    <div>
+      <h1>Welcome, Home Page</h1>
+      <UserProfile />
+    </div>
   );
 };
+
 export default Home;
