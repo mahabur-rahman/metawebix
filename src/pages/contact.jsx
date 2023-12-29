@@ -1,5 +1,13 @@
+
+
+import RefCount from "../components/RefCount";
+
 const Contact = () => {
-  return <div>Contact page</div>;
+  return (
+    <div>
+      <RefCount />
+    </div>
+  );
 };
 
 export default Contact;

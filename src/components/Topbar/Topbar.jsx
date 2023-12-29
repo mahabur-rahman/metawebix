@@ -20,8 +20,13 @@ const Topbar = () => {
             <Link to="/about" className="mx-3">
               About
             </Link>
-            <Link to="/contact" >Contact</Link>
-            <Link to="/post" className="mx-3">Post</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/post" className="mx-3">
+              Post
+            </Link>
+            <Link to="/user" className="mx-3">
+              User
+            </Link>
           </Nav>
         </Container>
       </Navbar>
