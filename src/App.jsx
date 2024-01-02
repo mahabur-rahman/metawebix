@@ -5,6 +5,7 @@ import "./global.scss";
 // pages
 import Home from "./pages/home";
 import Sidebar from "./components/Sidebar/Sidebar";
+import VideoCard from "./components/mainVideoCards/VideoCard";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       <Home />
       <div className="d-flex">
         <Sidebar />
-        <h1 className="bg-primary p-5">content</h1>
+        <VideoCard />
       </div>
     </>
   );

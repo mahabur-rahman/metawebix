@@ -1,0 +1,12 @@
+#videoCard {
+  overflow: hidden;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}

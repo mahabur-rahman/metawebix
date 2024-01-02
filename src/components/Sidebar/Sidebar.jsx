@@ -5,11 +5,12 @@ import {
   FaAngleRight,
 } from "react-icons/fa";
 import "./sidebar.scss";
-import { sidebarFistContent } from "../../data/data.jsx";
+import { sidebarFistContent } from "../../data/data";
 import { useState } from "react";
 
 const Sidebar = () => {
   const [data, setData] = useState(sidebarFistContent);
+
   return (
     <>
       <section id="sidebar">
