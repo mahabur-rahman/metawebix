@@ -1,5 +1,11 @@
+import TestReducter from "../components/TestReducter";
+
 const About = () => {
-  return <div>About page</div>;
+  return (
+    <div>
+      <TestReducter />
+    </div>
+  );
 };
 
 export default About;
