@@ -1,0 +1,31 @@
+.search_area {
+  width: 25rem;
+
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.search_icon {
+  border-radius: 10px;
+}
+
+.right_icon {
+  cursor: pointer;
+  position: relative;
+  .p_icon {
+    font-size: 1.3rem;
+    color: #000;
+  }
+
+  .number {
+    position: absolute;
+    right: 16%;
+    top: -44%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff0000;
+  }
+}

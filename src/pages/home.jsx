@@ -1,11 +1,10 @@
-import UserProfile from "../components/UserProfile";
+import Topbar from "../components/Topbar/Topbar";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome, Home Page</h1>
-      <UserProfile />
-    </div>
+    <>
+      <Topbar />
+    </>
   );
 };
 

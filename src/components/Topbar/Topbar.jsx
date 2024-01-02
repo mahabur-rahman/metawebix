@@ -1,45 +1,68 @@
-import { useContext } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
-// logo
-import logo from "../../images/google.jpeg";
-// style
-import "./topbar.css";
-import { Link } from "react-router-dom";
-import { UserContext } from "../../UserContext/UserContext";
+import { Container, Form, Nav, Navbar, Image } from "react-bootstrap";
+import { FaYoutube } from "react-icons/fa6";
+import { FaSearch, FaBell } from "react-icons/fa";
+import { FaVideo } from "react-icons/fa";
+import google from "../../images/google.jpeg";
+import "./topbar.scss";
 
 const Topbar = () => {
-  const { user } = useContext(UserContext);
-  const { role } = user;
-
   return (
-    <>
-      <Navbar>
-        <Container>
-          <Link to="/">
-            {role === "admin" ? (
-              "Mahabur"
-            ) : (
-              <img src={logo} alt="logo" className="logo" />
-            )}
-          </Link>
-          <Navbar.Toggle />
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container fluid>
+        {/* logo  */}
+        <span className="text-danger mx-1">
+          <FaYoutube style={{ height: "2rem", width: "2rem" }} />
+        </span>
+        <Navbar.Brand href="#" className="fw-bold">
+          YouTube
+        </Navbar.Brand>
 
-          <Nav className="mr-auto text-white">
-            <Link to="/">Home</Link>
-            <Link to="/about" className="mx-3">
-              About
-            </Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/post" className="mx-3">
-              Post
-            </Link>
-            <Link to="/user" className="mx-3">
-              User
-            </Link>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="mx-auto my-2 my-lg-0"
+            style={{ maxHeight: "100px" }}
+            navbarScroll
+          >
+            <Form className="d-flex align-items-center">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2 search_area"
+              />
+              <span className="px-4 py-2 bg-danger search_icon">
+                <FaSearch className="text-black" />
+              </span>
+            </Form>
           </Nav>
-        </Container>
-      </Navbar>
-    </>
+
+          {/* profile part  */}
+          <div className="profile">
+            <div className="d-flex align-items-center justify-content-between">
+              <div className="right_icon">
+                <FaVideo className="p_icon" />
+              </div>
+              <div className="mx-3 right_icon">
+                <FaBell className="p_icon" />
+                <span className="number">9</span>
+              </div>
+              <Image
+                src={google}
+                alt="profile"
+                style={{
+                  width: "40px",
+                  height: "40px",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+                }}
+              />
+            </div>
+          </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
+
 export default Topbar;
