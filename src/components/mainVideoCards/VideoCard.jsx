@@ -5,7 +5,8 @@ import { mainVideosContent } from "../../data/data.jsx";
 import List from "../List.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 const VideoCard = () => {
   useEffect(() => {
@@ -14,62 +15,68 @@ const VideoCard = () => {
       easing: "ease",
       offset: 200,
     });
+
+    // Initialize FancyBox
+    Fancybox.bind("[data-fancybox]", {
+      // Options for FancyBox can be added here
+      // For example:
+      // dragToClose: false,
+    });
   }, []);
 
   return (
-    <>
-      <section id="videoCard">
-        <Container>
-          <List />
-          <Row>
-            {mainVideosContent.map((item) => {
-              return (
-                <>
-                  <Col xl={3} key={item.id}>
-                    <Link to={`/details/${item.id}`}>
-                      <div className="video_card my-2">
-                        <Card data-aos="flip-left">
-                          <Card.Img
-                            className="main_img"
-                            variant="top"
-                            src={item.imgSrc}
-                          />
-                          <Card.Body>
-                            <div className="d-flex justify-content-between">
-                              <Image
-                                style={{
-                                  width: "40px",
-                                  height: "40px",
-                                  borderRadius: "50%",
-                                  objectFit: "cover",
-                                }}
-                                src={item.profilePicture}
-                              />
-                              <Card.Title className="fw-bold card_title">
-                                {item.title}
-                              </Card.Title>
-                            </div>
-                            <Card.Text className="fw-bold mx-4 px-3">
-                              {item.channelName}
-                            </Card.Text>
-                            <div className="d-flex items-center mx-4 px-3">
-                              <Card.Text>{item.views} views </Card.Text>
-                              <Card.Text className="mx-3">
-                                {item.times}
-                              </Card.Text>
-                            </div>
-                          </Card.Body>
-                        </Card>
+    <section id="videoCard">
+      <Container>
+        <List />
+        <Row>
+          {mainVideosContent.map((item) => (
+            <Col xl={3} key={item.id}>
+              <div>
+                <div className="video_card my-2">
+                  <Card data-aos="flip-left">
+                    <a
+                      href={"https://youtu.be/m-el0pQLQE4"} // Update with video source
+                      data-fancybox="gallery"
+                      data-caption={item.title} // Update with caption
+                    >
+                      <Card.Img
+                        className="main_img"
+                        variant="top"
+                        src={item.imgSrc}
+                      />
+                    </a>
+
+                    <Card.Body>
+                      <div className="d-flex justify-content-between">
+                        <Image
+                          style={{
+                            width: "40px",
+                            height: "40px",
+                            borderRadius: "50%",
+                            objectFit: "cover",
+                          }}
+                          src={item.profilePicture}
+                        />
+                        <Card.Title className="fw-bold card_title">
+                          {item.title}
+                        </Card.Title>
                       </div>
-                    </Link>
-                  </Col>
-                </>
-              );
-            })}
-          </Row>
-        </Container>
-      </section>
-    </>
+                      <Card.Text className="fw-bold mx-4 px-3">
+                        {item.channelName}
+                      </Card.Text>
+                      <div className="d-flex items-center mx-4 px-3">
+                        <Card.Text>{item.views} views </Card.Text>
+                        <Card.Text className="mx-3">{item.times}</Card.Text>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
   );
 };
 
