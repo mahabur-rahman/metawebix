@@ -4,17 +4,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./global.scss";
 // pages
 import Home from "./pages/home";
-import Sidebar from "./components/Sidebar/Sidebar";
-import VideoCard from "./components/mainVideoCards/VideoCard";
+import { Routes, Route } from "react-router-dom";
+import Shorts from "./pages/shorts";
+import Subscription from "./pages/subscription";
+import Movies from "./pages/Movies";
 
 const App = () => {
   return (
     <>
-      <Home />
-      <div className="d-flex">
-        <Sidebar />
-        <VideoCard />
-      </div>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/shorts" element={<Shorts />} />
+        <Route exact path="/subscription" element={<Subscription />} />
+        <Route exact path="/:gokula" element={<Movies />} />
+      </Routes>
     </>
   );
 };

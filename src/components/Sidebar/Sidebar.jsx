@@ -7,6 +7,7 @@ import {
 import "./sidebar.scss";
 import { sidebarFistContent } from "../../data/data";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [data, setData] = useState(sidebarFistContent);
@@ -18,7 +19,9 @@ const Sidebar = () => {
           <>
             <div className="sidebar_menu my-3 mx-3" key={text.id}>
               <span>{text.icon}</span>
-              <span className="mx-3">{text.text}</span>
+              <Link to={text.url} className="text-black">
+                <span className="mx-3">{text.text}</span>
+              </Link>
             </div>
           </>
         ))}
