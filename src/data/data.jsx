@@ -73,18 +73,155 @@ export const mainVideosContent = [
     views: "770k",
     times: "15h ago",
   },
+
+  {
+    id: 6,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+
+  {
+    id: 7,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+
+  {
+    id: 8,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+
+  {
+    id: 9,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+
+  {
+    id: 10,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+  {
+    id: 10,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+  {
+    id: 10,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+  {
+    id: 10,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+  {
+    id: 10,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+  {
+    id: 10,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+  {
+    id: 10,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
+  {
+    id: 10,
+    imgSrc:
+      "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "YouTube Creators",
+    profilePicture:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    channelName: "NexJs Developer",
+    views: "770k",
+    times: "15h ago",
+  },
 ];
 
 // list of series
 export const listOfSeries = [
-  { id: 1, seriesName: "Movies", url: "/movies" },
-  { id: 2, seriesName: "News", url: "/news" },
-  { id: 3, seriesName: "Series", url: "/series" },
-  { id: 4, seriesName: "Sports", url: "/sports" },
-  { id: 5, seriesName: "Cartoon", url: "/cartoon" },
-  { id: 6, seriesName: "Hollyood", url: "/hollyood" },
-  { id: 7, seriesName: "Bollyood", url: "/bollyood" },
-  { id: 8, seriesName: "Saregamapa", url: "/saregamapa" },
-  { id: 9, seriesName: "Kumar Sanu", url: "/kumar-sanu" },
-  { id: 10, seriesName: "Alka Yagnic", url: "/yalka-yagnic" },
+  { id: 1, seriesName: "Movies", url: "/series/movies" },
+  { id: 2, seriesName: "News", url: "/series/news" },
+  { id: 3, seriesName: "Series", url: "/series/series" },
+  { id: 4, seriesName: "Sports", url: "/series/sports" },
+  { id: 5, seriesName: "Cartoon", url: "/series/cartoon" },
+  { id: 6, seriesName: "Hollyood", url: "/series/hollyood" },
+  { id: 7, seriesName: "Bollyood", url: "/series/bollyood" },
+  { id: 8, seriesName: "Saregamapa", url: "/series/saregamapa" },
+  { id: 9, seriesName: "Kumar Sanu", url: "/series/kumar-sanu" },
+  { id: 10, seriesName: "Alka Yagnic", url: "/series/yalka-yagnic" },
 ];

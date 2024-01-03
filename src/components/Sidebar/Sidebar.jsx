@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [data, setData] = useState(sidebarFistContent);
+  const user = true;
 
   return (
     <>
@@ -75,6 +76,21 @@ const Sidebar = () => {
           </span>
           <span className="mx-3">Liked videos</span>
         </div>
+
+        {/* dynamic element show when user login */}
+        {/* {user ? (
+          <div className="mx-3 fw-bold mt-5">Mahabur</div>
+        ) : (
+          <>
+            <Link to="/register">
+              <div className="mx-3 fw-bold">Register</div>
+            </Link>
+
+            <Link to="/login">
+              <div className="mx-3 fw-bold">Login</div>
+            </Link>
+          </>
+        )} */}
       </section>
     </>
   );
