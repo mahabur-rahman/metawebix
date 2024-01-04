@@ -12,6 +12,7 @@ import NotFound from "./components/NotFound";
 import VideoCardDetails from "./components/VideoCardDetails";
 import Register from "./pages/register";
 import Login from "./pages/login";
+import UserDetails from "./components/UserDetails";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route exact path="/details/:cardItem" element={<VideoCardDetails />} />
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/user/:id" element={<UserDetails />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </>
