@@ -10,6 +10,7 @@ const Home = () => {
         <Sidebar />
         <VideoCard />
       </div>
+      <h2>Home page</h2>
     </>
   );
 };

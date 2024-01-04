@@ -13,19 +13,22 @@ import VideoCardDetails from "./components/VideoCardDetails";
 import Register from "./pages/register";
 import Login from "./pages/login";
 import UserDetails from "./components/UserDetails";
+import ActiveLinkTopba from "./components/ActiveLinkTopba";
 
 const App = () => {
   return (
     <>
+      {/* <ActiveLinkTopba /> */}
+
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/shorts" element={<Shorts />} />
-        <Route exact path="/subscription" element={<Subscription />} />
-        <Route exact path="/series/:gokula" element={<Movies />} />
-        <Route exact path="/details/:cardItem" element={<VideoCardDetails />} />
-        <Route exact path="/register" element={<Register />} />
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/user/:id" element={<UserDetails />} />
+        <Route index path="/" element={<Home />} />
+        <Route path="/shorts" element={<Shorts />} />
+        <Route path="/subscription" element={<Subscription />} />
+        <Route path="/series/:gokula" element={<Movies />} />
+        <Route path="/details/:cardItem" element={<VideoCardDetails />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/user/:id" element={<UserDetails />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </>
