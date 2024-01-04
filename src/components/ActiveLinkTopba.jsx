@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const ActiveLinkTopba = () => {
   return (
     <div>
-      <Link to="/">Home</Link>
-      <Link to="/shorts" className="mx-5">
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/shorts" className="mx-5">
         Shorts
-      </Link>
-      <Link to="/register">Register</Link>
+      </NavLink>
+      <NavLink to="/register">Register</NavLink>
     </div>
   );
 };

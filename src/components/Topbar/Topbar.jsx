@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Topbar = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary topbar">
       <Container fluid>
         {/* logo  */}
         <Link to="/">

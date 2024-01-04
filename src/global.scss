@@ -26,3 +26,17 @@ ul {
 .series {
   width: 100%;
 }
+
+.active {
+  background-color: red;
+  padding: 1rem;
+  color: white;
+}
+
+#sidebar {
+  position: fixed;
+  background-color: red !important;
+  width: 30%;
+  z-index: 9999;
+  margin-top: 3rem;
+}

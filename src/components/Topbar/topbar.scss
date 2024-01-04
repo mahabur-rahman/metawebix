@@ -1,3 +1,10 @@
+.topbar {
+  position: fixed;
+  width: 100%;
+  background-color: red !important;
+  z-index: 9;
+}
+
 .search_area {
   width: 25rem;
 
