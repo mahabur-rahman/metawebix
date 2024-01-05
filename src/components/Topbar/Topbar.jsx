@@ -1,14 +1,34 @@
+import { useEffect, useState } from "react";
 import { Container, Form, Nav, Navbar, Image } from "react-bootstrap";
-import { FaYoutube } from "react-icons/fa6";
-import { FaSearch, FaBell } from "react-icons/fa";
-import { FaVideo } from "react-icons/fa";
+import { FaYoutube, FaSearch, FaBell, FaVideo } from "react-icons/fa";
 import google from "../../images/google.jpeg";
 import "./topbar.scss";
 import { Link } from "react-router-dom";
 
 const Topbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar expand="lg" className="bg-body-tertiary topbar">
+    <Navbar
+      expand="lg"
+      className={`bg-body-tertiary topbar ${scrolled ? "scrolled" : ""}`}
+    >
       <Container fluid>
         {/* logo  */}
         <Link to="/">

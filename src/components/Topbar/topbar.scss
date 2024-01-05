@@ -1,8 +1,13 @@
 .topbar {
   position: fixed;
   width: 100%;
-  background-color: red !important;
+  background-color: #fff;
   z-index: 9;
+  transition: background-color 1s ease;
+  -webkit-transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -ms-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
 }
 
 .search_area {
@@ -43,4 +48,9 @@
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
   }
+}
+
+// bg color changes when i scroll 500px
+.scrolled {
+  background-color: red !important;
 }
