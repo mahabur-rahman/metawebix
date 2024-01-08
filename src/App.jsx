@@ -4,11 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./global.scss";
 // pages
 import Home from "./pages/home";
+import MyClock from "./component/MyClock";
 
 const App = () => {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      <MyClock />
     </>
   );
 };
