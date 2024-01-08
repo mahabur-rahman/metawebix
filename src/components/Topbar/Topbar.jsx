@@ -5,7 +5,7 @@ import google from "../../images/google.jpeg";
 import "./topbar.scss";
 import { Link } from "react-router-dom";
 
-const Topbar = () => {
+const Topbar = ({ title }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Topbar = () => {
           <span className="text-danger mx-1">
             <FaYoutube style={{ height: "2rem", width: "2rem" }} />
           </span>
-          <span className="fw-bold text-danger">YouTube</span>
+          <span className="fw-bold text-danger">{title}</span>
         </Link>
 
         <Navbar.Toggle aria-controls="navbarScroll" />

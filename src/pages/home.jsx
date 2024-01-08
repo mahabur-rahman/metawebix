@@ -5,7 +5,7 @@ import VideoCard from "../components/mainVideoCards/VideoCard";
 const Home = () => {
   return (
     <>
-      <Topbar />
+      <Topbar title="YouTube" />
       <div className="d-flex">
         <Sidebar />
         <VideoCard />

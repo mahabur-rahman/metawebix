@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [data, setData] = useState(sidebarFistContent);
-  const user = true;
 
   return (
     <>
@@ -68,6 +67,215 @@ const Sidebar = () => {
             <FaCheckDouble />
           </span>
           <span className="mx-3">Download</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
+        </div>
+
+        <div className="sidebar_menu my-3 mx-3">
+          <span>
+            <FaCheckDouble />
+          </span>
+          <span className="mx-3">Liked videos</span>
         </div>
 
         <div className="sidebar_menu my-3 mx-3">
