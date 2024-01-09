@@ -13,13 +13,10 @@ import VideoCardDetails from "./components/VideoCardDetails";
 import Register from "./pages/register";
 import Login from "./pages/login";
 import UserDetails from "./components/UserDetails";
-import ActiveLinkTopba from "./components/ActiveLinkTopba";
 
 const App = () => {
   return (
     <>
-      {/* <ActiveLinkTopba /> */}
-
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="/shorts" element={<Shorts />} />

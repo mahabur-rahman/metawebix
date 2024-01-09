@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Container, Form, Nav, Navbar, Image } from "react-bootstrap";
-import { FaYoutube, FaSearch, FaBell, FaVideo } from "react-icons/fa";
+import { FaYoutube, FaSearch, FaBell, FaVideo, FaBars } from "react-icons/fa";
 import google from "../../images/google.jpeg";
 import "./topbar.scss";
 import { Link } from "react-router-dom";
 
-const Topbar = ({ title }) => {
+const Topbar = ({ title, toggleSidebar }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -30,6 +30,9 @@ const Topbar = ({ title }) => {
       className={`bg-body-tertiary topbar ${scrolled ? "scrolled" : ""}`}
     >
       <Container fluid>
+        <span className="mx-1" style={{ fontSize: "2rem", cursor: "pointer" }}>
+          <FaBars onClick={toggleSidebar} />
+        </span>
         {/* logo  */}
         <Link to="/">
           <span className="text-danger mx-1">

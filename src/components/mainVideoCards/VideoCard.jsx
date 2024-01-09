@@ -41,7 +41,7 @@ const VideoCard = () => {
           {mainVideosContent.map((anything) => (
             <Col xl={3} key={anything.id}>
               {/* <DynamicCard {...anything} /> */}
-              <Card data-aos="flip-left">
+              <Card data-aos="flip-left" style={{ marginLeft: "1rem" }}>
                 <Card.Body>
                   <div className="d-flex justify-content-between">
                     <Card.Title className="fw-bold card_title">
