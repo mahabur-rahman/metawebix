@@ -6,7 +6,7 @@ const MainTask = () => {
     <>
       <div className="d-flex justify-content-between align-items-center mt-5">
         <div>
-          <h3>Go to shopping</h3>
+          <h3>something</h3>
         </div>
 
         <div className="d-flex align-items-center">

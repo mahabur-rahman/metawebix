@@ -1,11 +1,13 @@
-import AddTaskBtn from "../components/AddTaskBtn";
+import { useState } from "react";
 import Input from "../components/Input";
 import MainTask from "../components/MainTask";
 import Title from "../components/Title";
 
 const Home = () => {
+  const [todos, setTodos] = useState([]);
+
   const title = "Todo List in React";
-  const btnContent = "Add Task";
+
   return (
     <div
       className="p-5 mt-5"
@@ -17,10 +19,8 @@ const Home = () => {
       {/* input area */}
       <Input />
 
-      {/* btn  */}
-      <AddTaskBtn content={btnContent} />
-
       {/* main task  */}
+
       <MainTask />
     </div>
   );
