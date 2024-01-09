@@ -1,19 +1,28 @@
-import MyChart from "../components/MyChart";
-import Sidebar from "../components/Sidebar/Sidebar";
-import Topbar from "../components/Topbar/Topbar";
-import VideoCard from "../components/mainVideoCards/VideoCard";
+import AddTaskBtn from "../components/AddTaskBtn";
+import Input from "../components/Input";
+import MainTask from "../components/MainTask";
+import Title from "../components/Title";
 
 const Home = () => {
+  const title = "Todo List in React";
+  const btnContent = "Add Task";
   return (
-    <>
-      {/* <Topbar title="YouTube" />
-      <div className="d-flex">
-        <Sidebar />
-        <VideoCard />
-      </div> */}
+    <div
+      className="p-5 mt-5"
+      style={{ width: "50%", background: "#ddd", margin: "0 auto" }}
+    >
+      {/* title  */}
+      <Title title={title} />
 
-      <MyChart />
-    </>
+      {/* input area */}
+      <Input />
+
+      {/* btn  */}
+      <AddTaskBtn content={btnContent} />
+
+      {/* main task  */}
+      <MainTask />
+    </div>
   );
 };
 
