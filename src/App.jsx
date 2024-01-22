@@ -1,13 +1,11 @@
-// react bootstrap
-import "bootstrap/dist/css/bootstrap.min.css";
 // global  styles
-import "./global.scss";
-import Home from "./pages/home";
+import Gmeet from "./components/gmeet";
+import "./global.css";
 
 const App = () => {
   return (
     <>
-      <Home />
+      <Gmeet />
     </>
   );
 };
