@@ -27,10 +27,7 @@ const Register = () => {
 
     try {
       // api call
-      const response = await axios.post(
-        "http://localhost:5000/api/v1/user/signup",
-        formData
-      );
+      const response = await axios.post("/signup", formData);
 
       if (response.data) {
         setRedirect(true);

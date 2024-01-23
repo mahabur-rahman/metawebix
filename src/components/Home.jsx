@@ -6,7 +6,7 @@ const Home = () => {
 
   useEffect(() => {
     (async () => {
-      const { data } = await axios.get(`http://localhost:5000/api/v1/user/me`);
+      const { data } = await axios.get(`/me`);
       setMessage(`${data.firstName} - ${data.lastName}`);
     })();
   }, []);
