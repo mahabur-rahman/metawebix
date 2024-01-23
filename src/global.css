@@ -10,8 +10,33 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: aliceblue;
 }
 
 ul {
   list-style: none;
+}
+
+a:hover {
+  color: teal !important;
+}
+
+.donwnloadBtn:hover {
+  background: rgb(69, 195, 69) !important;
+}
+
+.private {
+  position: relative;
+}
+
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
