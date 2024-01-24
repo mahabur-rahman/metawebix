@@ -14,6 +14,7 @@ const Private = () => {
         <div>
           <img src={imgOne} alt="private  profile" className="img1" />
         </div>
+
         {/* content  */}
         <div className="px-96 text-white">
           <Para text={paragraph} />
