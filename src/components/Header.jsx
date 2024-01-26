@@ -20,7 +20,7 @@ function Header() {
   // }, []);
 
   const logout = async () => {
-    await axios.post("/logout", {}, { withCredentials: true });
+    await axios.post("/user/logout", {}, { withCredentials: true });
     dispatch(setAuth(false));
     // every headers set token ''
     axios.defaults.headers.common["Authorization"] = ``;

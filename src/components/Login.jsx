@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import axios from "axios";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -21,7 +21,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // api call
-    const { data } = await axios.post(`/login`, formData, {
+    const { data } = await axios.post(`/user/login`, formData, {
       withCredentials: true,
     });
 
@@ -76,6 +76,8 @@ const Login = () => {
             />
           </Col>
         </Form.Group>
+
+        <Link to="/forgot-password">Forgot Password?</Link>
 
         <Form.Group as={Row} className="mb-3">
           <Col sm={{ span: 10, offset: 2 }}>

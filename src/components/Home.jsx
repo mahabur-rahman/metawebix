@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     (async () => {
       try {
-        const { data } = await axios.get(`/me`);
+        const { data } = await axios.get(`/user/me`);
         setMessage(`${data.firstName} - ${data.lastName}`);
 
         dispatch(setAuth(true));

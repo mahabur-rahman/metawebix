@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:5000/api/v1/user";
+axios.defaults.baseURL = "http://localhost:5000/api/v1";
 
 let refresh = false;
 
@@ -11,7 +11,7 @@ axios.interceptors.response.use(
       refresh = true;
 
       const response = await axios.post(
-        "/refresh",
+        "/user/refresh",
         {},
         { withCredentials: true }
       );
