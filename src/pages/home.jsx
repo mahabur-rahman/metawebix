@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <>
-      <Topbar title="YouTube" toggleSidebar={toggleSidebar} />
+      <Topbar title="YT" toggleSidebar={toggleSidebar} />
 
       <div className="d-flex justify-content-center">
         {showSidebar && <Sidebar />}
